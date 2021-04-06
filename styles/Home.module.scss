@@ -26,7 +26,7 @@ $primary-color: blueviolet;
   padding: 0;
   margin: 5em 0;
 
-  li {
+  & > li {
     margin-bottom: 3em;
 
     &:last-child {
@@ -41,12 +41,6 @@ $primary-color: blueviolet;
       margin-bottom: 0;
     }
   }
-}
-
-.postsContent {
-  font-size: 34px;
-  line-height: 43px;
-  margin-bottom: 0.5em;
 }
 
 .formContent {

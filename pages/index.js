@@ -1,5 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
+import Post from "../components/Post";
+import Bio from "../components/Post/Bio";
 
 export default function Home() {
   return (
@@ -10,29 +12,34 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>My Posts</h1>
+        <Bio
+          headhsot="https://pbs.twimg.com/profile_images/1111467405895712768/XOR37rzU_400x400.jpg"
+          name="Abhishek Dangol"
+          tagline="Helping others by leading by example"
+          role="Associate Software Engineer"
+        />
 
         <ul className={styles.posts}>
           <li>
-            <p className={styles.postsContent}>
-              I'm working in Figma trying to design a new website that shows all
-              my tweets!
-            </p>
-            <p>3/2/2021</p>
+            <Post content="Het, I'm a new post!" date="4/5/2021" />
           </li>
           <li>
-            <p className={styles.postsContent}>
-              I'm working in Figma trying to design a new website that shows all
-              my tweets!
-            </p>
-            <p>3/2/2021</p>
+            <Post
+              content="I'm working in Figma trying to design a new website that shows all my tweets!"
+              date="3/2/2021"
+            />
           </li>
           <li>
-            <p className={styles.postsContent}>
-              I'm working in Figma trying to design a new website that shows all
-              my tweets!
-            </p>
-            <p>3/2/2021</p>
+            <Post
+              content="I'm working in Figma trying to design a new website that shows all my tweets!"
+              date="3/2/2021"
+            />
+          </li>
+          <li>
+            <Post
+              content="I'm working in Figma trying to design a new website that shows all my tweets!"
+              date="3/5/2021"
+            />
           </li>
         </ul>
         <form>
